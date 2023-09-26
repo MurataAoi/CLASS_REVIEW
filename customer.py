@@ -1,4 +1,4 @@
-# -----------------------c-7 start------------------------------------
+# -----------------------start c-8------------------------------------
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
@@ -22,7 +22,7 @@ class Customer:
 
     def info_csv(self):
         # csv_string = f"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}"
-        not_csv_string = f"{self.full_name()} {self.age} {self.entry_fee()}"
+        not_csv_string = f"{self.full_name()}|{self.age}|{self.entry_fee()}"
         return not_csv_string
 
 
@@ -42,6 +42,51 @@ print(Aoi.info_csv())
 print(ken.info_csv())
 print(tom.info_csv())
 print(ieyasu.info_csv())
+# -----------------------finishs c-8----------------------------------
+# -----------------------c-7 start------------------------------------
+# class Customer:
+#     def __init__(self, first_name, family_name, age):
+#         self.first_name = first_name
+#         self.family_name = family_name
+#         self.age = age
+
+#     def full_name(self):
+#         return f"{self.first_name} {self.family_name}"
+
+#     def entry_fee(self):
+#         if self.age <= 3:
+#             return "0"
+#         elif self.age >= 75:
+#             return "500"
+#         elif self.age < 20:
+#             return "1000"
+#         elif self.age >= 65:
+#             return "1200"
+#         else:
+#             return "1500"
+
+#     def info_csv(self):
+#         # csv_string = f"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}"
+#         not_csv_string = f"{self.full_name()} {self.age} {self.entry_fee()}"
+#         return not_csv_string
+
+
+# Aoi = Customer(first_name="Aoi", family_name="Murata", age=100)
+# Aoi.info_csv()
+
+# ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
+# ken.info_csv()  # "Ken Tanaka,15,1000" という値を返す
+
+# tom = Customer(first_name="Tom", family_name="Ford", age=57)
+# tom.info_csv()  # "Tom Ford,57,1500" という値を返す
+
+# ieyasu = Customer(first_name="Ieyasu", family_name="Tokugawa", age=73)
+# ieyasu.info_csv()  # "Ieyasu Tokugawa,73,1200" という値を返す
+
+# print(Aoi.info_csv())
+# print(ken.info_csv())
+# print(tom.info_csv())
+# print(ieyasu.info_csv())
 # -----------------------c-7 finish-----------------------------------
 # -----------------------c-6 start------------------------------------
 # class Customer:
